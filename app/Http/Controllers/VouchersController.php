@@ -6,7 +6,7 @@ use App\Models\Vouchers;
 use Illuminate\Http\Request;
 use Intervention\Image\ImageManagerStatic as Image;
 use Mail;
-use App\Reminder;
+use App\Models\Reminder;
 
  class VouchersController extends Controller{
 
