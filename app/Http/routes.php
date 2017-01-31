@@ -15,6 +15,14 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
+$app->get('/yeah', function () use ($app) {
+    return "halooo gaes";
+});
+
+$app->get('/yes', function () {
+    return "halooo gaes 2";
+});
+
 $app->get('/vouchers/{code}', 'VouchersController@getByCodeVoucher');
 
 $app->post('/vouchers', 'VouchersController@insert');
