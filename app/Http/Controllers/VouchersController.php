@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Vouchers;
 use Illuminate\Http\Request;
 use Intervention\Image\ImageManagerStatic as Image;
+use Mail;
+use App\Reminder;
 
  class VouchersController extends Controller{
 
@@ -123,6 +125,16 @@ use Intervention\Image\ImageManagerStatic as Image;
       }else{
         return 'fak';
       }
+
+    }
+
+    public function testMail(){
+      
+        $mail = "flashdiskkotor@gmail.com";
+        Mail::to($mail)->send(new Reminder);
+
+        dd("mail success");
+
 
     }
 
