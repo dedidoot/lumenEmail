@@ -129,11 +129,11 @@ use App\Reminder;
     }
 
     public function testMail(){
-      
-        $mail = "flashdiskkotor@gmail.com";
+      return "woyoo"
+       /* $mail = "flashdiskkotor@gmail.com";
         Mail::to($mail)->send(new Reminder);
 
-        dd("mail success");
+        dd("mail success");*/
 
 
     }
