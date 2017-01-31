@@ -35,4 +35,4 @@ $app->post('/vouchers/delete', 'VouchersController@delete');
 
 $app->post('/vouchers/upload', 'VouchersController@uploadImage');
 
-$app->get('/test-mail', 'VouchersController@testMail');
+$app->get('/mail', 'VouchersController@testMail');
